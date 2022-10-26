@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/spinner.css">
+    <link rel="stylesheet" href="./css/estilosABM.css">
+    <script src="./js/anuncioMascota.js" type="module"></script>
+    <script src="./js/script.js" type="module"></script>
+    <title>ABM Mascotas</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <a href="index.html"
+            ><img
+              class="logo"
+              src="./imagenes/logo mascotas.png"
+              alt="Logo de mascotas con perro y gato"
+          /></a>
+          <ul>
+            <li><a href="index.html">Nosotros</a></li>
+            <li><a href="administracion.html">Anuncios</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+  
+      <main>
+        <section>
+          <h2>Administración</h2>
+          <img
+            class="banner"
+            src="./imagenes/banner gato.jpg"
+            alt="Gato tirado en el piso mirando a la cámara"
+          />
+          <form>
+            <fieldset>
+              <legend>Información del anuncio</legend>
+              <label>
+                TITULO:
+                <input
+                  class="block titulo"
+                  name="txtTitulo"
+                  type="text"
+                  placeholder="Título"
+                  required
+                />
+                <small></small>
+              </label>
+              <label>
+                DESCRIPCION:
+                <input
+                  type="text"
+                  class="block descripcion"    
+                  name="txtDescripcion"
+                  placeholder="Descripción"
+                  required
+                />
+                <small></small>
+              </label>
+              <label>
+                ANIMAL:
+                <label class="radio"
+                  ><input
+                    type="radio"
+                    name="rdoAnimal"
+                    value="Perro"
+                    checked
+                  />PERRO
+                </label>
+                <label class="radio">
+                  <input
+                    type="radio"
+                    name="rdoAnimal"
+                    value="Gato"
+                  />GATO
+                </label>
+              </label>
+              <label>
+                PRECIO:
+                <input
+                  class="block"
+                  name="nbrPrecio"
+                  type="number"
+                  placeholder="Precio"
+                  required
+                />
+                <small></small>
+              </label>
+              <div class="caracteristicas">
+                <label>
+                  <img
+                    class="icon"
+                    src="./imagenes/raza.png"
+                    alt="Huella de pata de animal"
+                  />
+                  <input
+                    class="tercio"
+                    name="txtRaza"
+                    type="text"
+                    placeholder="Raza"
+                    required
+                  />
+                  <small></small>
+                </label>
+                <label>
+                  <img
+                    class="icon"
+                    src="./imagenes/fechaNac.png"
+                    alt="Cigüeña"
+                  />
+                  <input
+                    class="tercio"
+                    name="fechaNac"
+                    type="date"
+                    placeholder="dd/mm/aaaa"
+                    required
+                  />
+                  <small></small>
+                </label>
+                <label>
+                  <img
+                    class="icon"
+                    src="./imagenes/vacuna.png"
+                    alt="Jeringa"
+                  />
+                  <select
+                    class="tercio"
+                    name="slcVacuna"
+                    type="text"
+                    placeholder="Potencia"
+                    min="0"
+                    max="500"
+                    required
+                  >
+                  <option>----Elegir según si tiene vacunación al día----</option>
+                  <option>Sí</option>
+                  <option>No</option>
+                </select>
+                  <small></small>
+                </label>
+              </div>
+              <label>
+                <input class="hidden" type="text" name="txtId" />
+              </label>
+            </fieldset>
+            <fieldset class="botones">
+              <input id="btnAltaModificar" type="submit" value="Agregar" />
+              <input type="button" value="Eliminar" id="btnEliminar" />
+              <input type="button" value="Cancelar" id="btnCancelar" />
+            </fieldset>
+          </form>
+        </section>
+        <section>
+          <h2>Listado de Mascotas</h2>
+          <div class="spinner hidden"></div>
+          <div id="tabla-dinamica" class="hidden"></div>
+        </section>
+      </main>
+      <footer>
+        <ul>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Anuncios</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+        <p>Todos los Derechos Reservados 2019 &copy;</p>
+      </footer>
+</body>
+</html>

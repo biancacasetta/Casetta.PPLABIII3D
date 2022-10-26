@@ -1,0 +1,106 @@
+body {
+    margin: 0 auto;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+nav, footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    font-family: monospace;
+}
+
+a {
+    text-decoration: none;
+    padding: 0 20px;
+    font-size: 22px;
+    color: white;
+}
+
+a:hover {
+    color:darkblue;
+}
+
+li {
+    list-style-type: none;
+    padding: 0 20px;
+    font-size: 22px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    object-fit: contain;
+    width: 100px;
+}
+
+.pagina-principal-top {
+    background-image: url(../imagenes/fondo\ perro.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: -100px;
+}
+
+h1 {
+    color: white;
+    padding: 450px 0 50px 30px;
+}
+
+.icon {
+    object-fit: contain;
+    width: 40px;
+}
+
+#anuncios-dinamicos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.ficha {
+    background-color:rgb(205, 144, 255);
+    padding: 20px;
+    width: 400px;
+    height: 210px;
+    margin: 30px;
+}
+
+.caracteristicas {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    margin: 0;
+}
+
+p {
+    font-size: 15px;
+}
+
+span {
+    padding: 0 10px;
+}
+
+input[type="button"] {
+    background-color: darkmagenta;
+    border: none;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    font-family: monospace;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+}
+
